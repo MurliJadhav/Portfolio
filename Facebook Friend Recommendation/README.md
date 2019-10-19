@@ -1,0 +1,31 @@
+# Graph mining
+Graph Mining is the set of tools and techniques used to (a) analyze the properties of real-world graphs, (b) predict how the structure and properties of a given graph might affect some application, and (c) develop models that can generate realistic graphs that match the patterns found in real-world graphs of interest
+# Facebook-Friend-Recommendation-using-Graph-Mining
+
+![image](https://user-images.githubusercontent.com/40149802/64281619-21fd1900-cf71-11e9-8892-49d3e1a08370.png)
+
+
+## Problem statement:
+
+This project is based on social media link prediction whether two users are going to be friend in future or not.
+Data Overview
+
+Taken data from facebook's recruting challenge on kaggle https://www.kaggle.com/c/FacebookRecruiting data contains two columns source and destination eac edge in graph
+
+## Data columns (total 2 columns):
+
+> source_node int64
+
+> destination_node int64
+
+## Mapping the problem into supervised learning problem:
+
+Generated training samples of good and bad links from given directed graph and for each link got some features like no of followers, is he followed back, page rank, katz score, adar index, some svd fetures of adj matrix, some weight features etc. and trained ml model based on these features to predict link.
+
+## Business objectives and constraints:
+
+No low-latency requirement. Probability of prediction is useful to recommend ighest probability links.
+
+## Performance metric for supervised learning:
+
+Both precision and recall is important so F1 score is good choice Confusion matrix.
